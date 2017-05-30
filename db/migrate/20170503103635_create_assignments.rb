@@ -4,6 +4,8 @@ class CreateAssignments < ActiveRecord::Migration[5.0]
       t.string :title
       t.text :statement
       t.references :course, foreign_key: true
+      t.text :start_date
+      t.text :end_date
 
       t.timestamps
     end

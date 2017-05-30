@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 20170510120423) do
     t.string   "title"
     t.text     "statement"
     t.integer  "course_id"
+    t.text     "start_date"
+    t.text     "end_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["course_id"], name: "index_assignments_on_course_id"

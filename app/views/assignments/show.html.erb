@@ -10,6 +10,15 @@
   <%= markdown(@assignment.statement) %>
 </p>
 
+<p>
+  <strong>Starting date:</strong>
+  <%= @assignment.start_date %>
+</p>
+
+<p>
+  <strong>Ending date:</strong>
+  <%= @assignment.end_date %>
+</p>
 <%= link_to 'Grades', course_assignment_grades_path(assignment_id: @assignment.id) %>
 <%= link_to 'Edit', edit_course_assignment_path %> |
 <%= link_to 'Back', course_assignments_path %>
